@@ -44,4 +44,11 @@
   git@github.com:myeonwoo/mvc.git
   https://github.com/myeonwoo/mvc.git
   
--- 
+-- 소스 적용 작업
+  git init .
+  git remote add origin git@github.com:myeonwoo/mvc.git
+  git fetch origin
+  git branch -f master origin/master
+  git reset .
+  git checkout -f
+
