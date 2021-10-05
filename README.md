@@ -1,4 +1,80 @@
-# client6
+# 소스 적용 가이드
+## STEP 1. 선행 작업 (로컬 개발 머신 환경)
+npm, git
+
+## STEP 2. nuxt 프로젝트 생성 
+### `가이드 페이지`
+https://nuxtjs.org/docs/get-started/installation
+
+### 옵션 선택:
+```bash
+Generating Nuxt.js project in client5
+? Project name: client5
+? Programming language: JavaScript
+? Package manager: Npm
+? UI framework: Bootstrap Vue
+? Nuxt.js modules: Axios - Promise based HTTP client
+? Linting tools: ESLint
+? Testing framework: Jest
+? Rendering mode: Universal (SSR / SSG)
+? Deployment target: Server (Node.js hosting)
+? Development tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Continuous integration: None
+? Version control system: Git
+```
+
+### 실행
+```bash
+npm init nuxt-app <project-name>
+```
+
+
+## STEP 3. plugin 추가 v-calendar : https://vcalendar.io/installation.html
+### 이미 작업된 파일 수정 적용됨 (git)
+```javascript
+  - plugins/vue-calendar.js 추가
+    import Vue from 'vue';
+    import VCalendar from 'v-calendar';
+
+    // Use v-calendar & v-date-picker components
+    Vue.use(VCalendar, {
+      componentPrefix: 'vc',
+    });
+  - nuxt.config.js 수정
+    plugins: [
+      {src:'~/plugins/vue-calendar.js', mode: 'client'}
+    ],
+```
+
+### 실행
+```bash
+  cd <project-name>
+  npm install v-calendar
+```
+
+## STEP 4. Git 소스 적용
+```bash
+  git init .
+  git remote add origin git@github.com:myeonwoo/mvc.git
+  git fetch origin
+  git branch -f master origin/master
+  git reset .
+  git checkout -f
+```
+
+## STEP 5. 로컬 개발 서버 실행
+```bash
+  npm run dev
+```
+
+## STEP 6. 개발 시작
+  
+### 개발 플로
+  1. 소스 수정
+  2. git push
+  3. build & deploy
+
+# APP Structure
 
 ## Build Setup
 

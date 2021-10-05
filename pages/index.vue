@@ -4,14 +4,14 @@
       <Hero />
       <LargeCardDisplay 
         v-for="cardInfo in largeCardSections"
-        :key="cardInfo.id"
+        :key="'A' + cardInfo.id"
         :cardsSection="cardInfo"
       />
       <hr>
       <h3>Small cards here</h3>
       <SmallCardDisplay
         v-for="cardInfo in smallCardSections"
-        :key="cardInfo.id"
+        :key="'B' + cardInfo.id"
         :cardsSection="cardInfo"
       />
     </div>
