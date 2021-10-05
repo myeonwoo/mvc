@@ -3,16 +3,31 @@
 
 -- nuxt 프로젝트 생성 
   가이드: https://nuxtjs.org/docs/get-started/installation
-  cmd
+  실행
     npm init nuxt-app <project-name>
 
+    메뉴얼:
+      Generating Nuxt.js project in client5
+      ? Project name: client5
+      ? Programming language: JavaScript
+      ? Package manager: Npm
+      ? UI framework: Bootstrap Vue
+      ? Nuxt.js modules: Axios - Promise based HTTP client
+      ? Linting tools: ESLint
+      ? Testing framework: Jest
+      ? Rendering mode: Universal (SSR / SSG)
+      ? Deployment target: Server (Node.js hosting)
+      ? Development tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+      ? Continuous integration: None
+      ? Version control system: Git
+
 -- plugin 추가 v-calendar : https://vcalendar.io/installation.html
-  cmd
+  실행
     cd <project-name>
     npm install v-calendar
 
 
-  이미 작업된 수정
+  이미 작업된 파일 수정 적용됨 (git)
     - plugins/vue-calendar.js 추가
       import Vue from 'vue';
       import VCalendar from 'v-calendar';
@@ -27,28 +42,15 @@
       ],
 
 
--- nuxt 앱 생성 > git repo 설정
-  git remote add origin https://github.com/myeonwoo/mvc.git
-  파일 삭제 폴더 components
-    components/NuxtLogo.vue
-    components/Tutorial.vue
-    nuxt.config.js
-    package-lock.json
-    package.json
-    pages/index.vue
-    store/README.md
-
-  git remote set-url origin git@github.com:myeonwoo/mvc.git
-  git remote add origin https://github.com/myeonwoo/mvc.git
-  git@github.com:myeonwoo/mvc.git
-  git@github.com:myeonwoo/mvc.git
-  https://github.com/myeonwoo/mvc.git
-  
--- 소스 적용 작업
+-- Git 소스 적용
   git init .
   git remote add origin git@github.com:myeonwoo/mvc.git
   git fetch origin
   git branch -f master origin/master
   git reset .
   git checkout -f
+
+-- 로컬 개발 서버 실행
+  npm run dev
+-- 개발 시작
 
