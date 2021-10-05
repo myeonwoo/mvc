@@ -6,7 +6,7 @@ npm, git
 ### `가이드 페이지`
 https://nuxtjs.org/docs/get-started/installation
 
-### 옵션 선택:
+### `옵션 선택:`
 ```bash
 Generating Nuxt.js project in client5
 ? Project name: client5
@@ -23,14 +23,14 @@ Generating Nuxt.js project in client5
 ? Version control system: Git
 ```
 
-### 실행
+### `실행`
 ```bash
 npm init nuxt-app <project-name>
 ```
 
 
 ## STEP 3. plugin 추가 v-calendar : https://vcalendar.io/installation.html
-### 이미 작업된 파일 수정 적용됨 (git)
+### `이미 작업된 파일 수정 적용됨 (git)`
 ```javascript
   - plugins/vue-calendar.js 추가
     import Vue from 'vue';
@@ -46,7 +46,7 @@ npm init nuxt-app <project-name>
     ],
 ```
 
-### 실행
+### `실행`
 ```bash
   cd <project-name>
   npm install v-calendar
@@ -69,7 +69,7 @@ npm init nuxt-app <project-name>
 
 ## STEP 6. 개발 시작
   
-### 개발 플로
+### `개발 플로`
   1. 소스 수정
   2. git push
   3. build & deploy
