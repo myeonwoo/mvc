@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h6>파일 : sc/videos.vue</h6>
+    <h6>파일 : sc/index.vue</h6>
     <nuxt-child />
   </div>
 </template>

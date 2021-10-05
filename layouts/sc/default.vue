@@ -2,7 +2,7 @@
   <div>
     <div id="navbar">
       <div class="navbar-links">
-        <nuxt-link to="/sc/">Home</nuxt-link>
+        <nuxt-link to="/sc">Home</nuxt-link>
         <nuxt-link to="/sc/videos">Videos</nuxt-link>
       </div>
     </div>

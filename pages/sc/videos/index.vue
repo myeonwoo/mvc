@@ -1,9 +1,11 @@
 <template>
   <div>
+    <h6>파일 : sc/videos/index.vue</h6>
+
     <nuxt-child />
     <h1>Videos</h1>
     <div v-for="video in videos" :key="video.id">
-      <nuxt-link :to="`/sc/videos/${video.id}`">{{ video.name }}</nuxt-link>
+      <nuxt-link :to="`/sc/videos/${video.id}`">{{video.id}} : {{ video.name }}</nuxt-link>
     </div>
   </div>
 </template>

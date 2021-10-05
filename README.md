@@ -3,8 +3,8 @@
 npm, git
 
 ## STEP 2. nuxt 프로젝트 생성 
-### `가이드 페이지`
-https://nuxtjs.org/docs/get-started/installation
+### `가이드 페이지 `
+[Nuxt 참고 문서](https://nuxtjs.org/docs/get-started/installation)
 
 ### `옵션 선택:`
 ```bash
@@ -31,21 +31,22 @@ npm init nuxt-app <project-name>
 
 ## STEP 3. plugin 추가
 ### `v-calendar`
-https://vcalendar.io/installation.html
+[Nuxt 참고 문서](https://vcalendar.io/installation.html)
+
 ### `이미 작업된 파일 수정 적용됨 (git)`
 ```javascript
-  - plugins/vue-calendar.js 추가
-    import Vue from 'vue';
-    import VCalendar from 'v-calendar';
+  //plugins/vue-calendar.js 추가
+  import Vue from 'vue';
+  import VCalendar from 'v-calendar';
 
     // Use v-calendar & v-date-picker components
     Vue.use(VCalendar, {
       componentPrefix: 'vc',
     });
-  - nuxt.config.js 수정
-    plugins: [
-      {src:'~/plugins/vue-calendar.js', mode: 'client'}
-    ],
+  //nuxt.config.js 수정
+  plugins: [
+    {src:'~/plugins/vue-calendar.js', mode: 'client'}
+  ],
 ```
 
 ### `실행`

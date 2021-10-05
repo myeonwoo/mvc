@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h6>파일 : sc/videos/_id.vue</h6>
+    
     <nuxt-child :video="video" />
   </div>
 </template>
