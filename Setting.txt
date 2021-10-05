@@ -1,0 +1,47 @@
+-- 선행 작업 (로컬 개발 머신 환경)
+  npm, git
+
+-- nuxt 프로젝트 생성 
+  가이드: https://nuxtjs.org/docs/get-started/installation
+  cmd
+    npm init nuxt-app <project-name>
+
+-- plugin 추가 v-calendar : https://vcalendar.io/installation.html
+  cmd
+    cd <project-name>
+    npm install v-calendar
+
+
+  이미 작업된 수정
+    - plugins/vue-calendar.js 추가
+      import Vue from 'vue';
+      import VCalendar from 'v-calendar';
+
+      // Use v-calendar & v-date-picker components
+      Vue.use(VCalendar, {
+        componentPrefix: 'vc',
+      });
+    - nuxt.config.js 수정
+      plugins: [
+        {src:'~/plugins/vue-calendar.js', mode: 'client'}
+      ],
+
+
+-- nuxt 앱 생성 > git repo 설정
+  git remote add origin https://github.com/myeonwoo/mvc.git
+  파일 삭제 폴더 components
+    components/NuxtLogo.vue
+    components/Tutorial.vue
+    nuxt.config.js
+    package-lock.json
+    package.json
+    pages/index.vue
+    store/README.md
+
+  git remote set-url origin git@github.com:myeonwoo/mvc.git
+  git remote add origin https://github.com/myeonwoo/mvc.git
+  git@github.com:myeonwoo/mvc.git
+  git@github.com:myeonwoo/mvc.git
+  https://github.com/myeonwoo/mvc.git
+  
+-- 
