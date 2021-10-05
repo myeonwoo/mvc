@@ -29,7 +29,9 @@ npm init nuxt-app <project-name>
 ```
 
 
-## STEP 3. plugin 추가 v-calendar : https://vcalendar.io/installation.html
+## STEP 3. plugin 추가
+### `v-calendar`
+https://vcalendar.io/installation.html
 ### `이미 작업된 파일 수정 적용됨 (git)`
 ```javascript
   - plugins/vue-calendar.js 추가
@@ -52,7 +54,7 @@ npm init nuxt-app <project-name>
   npm install v-calendar
 ```
 
-## STEP 4. Git 소스 적용
+## STEP 4. 소스 적용 (git pull)
 ```bash
   git init .
   git remote add origin git@github.com:myeonwoo/mvc.git
@@ -74,6 +76,11 @@ npm init nuxt-app <project-name>
   2. git push
   3. build & deploy
 
+
+\
+&nbsp;
+\
+&nbsp;
 # APP Structure
 
 ## Build Setup
