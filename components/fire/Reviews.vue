@@ -2,7 +2,7 @@
   <div>
     <h3>Customer Reviews</h3>
     <div v-if="!$fetchState.pending && reviewers.results">
-      <ReviewCard
+      <fireReviewCard
       v-for="reviewer in reviewers.results"
       :key="reviewer.login.uuid"
       :review="reviewer"

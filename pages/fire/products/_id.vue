@@ -6,7 +6,7 @@
         <div class="info-box">
           <h1>{{ product.title }}</h1>
           <p class="snippet">{{ product.snippet }}</p>
-          <RentModal 
+          <fireRentModal 
           :product="product"
           />
         </div>
@@ -35,10 +35,10 @@
           {{ product.description }}
         </p>
       </div>
-      <Reviews />
+      <fireReviews />
     </div>
     <div v-else class="container padding">
-      <PageNotFound />
+      <firePageNotFound />
     </div>
   </div>
 </template>
@@ -46,6 +46,7 @@
 <script>
   import { mapGetters } from 'vuex'
   export default {
+    layout: "fire/default",
     computed: {
       product() {
         return this.$store.getters.getProductById(this.$route.params.id);

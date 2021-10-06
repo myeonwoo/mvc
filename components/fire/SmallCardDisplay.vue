@@ -2,7 +2,7 @@
     <div class="container">
         <h3 class="header">{{ cardsSection.title }}</h3>
         <div class="card-container">
-            <SmallCard 
+            <fireSmallCard 
                 v-for="card in cardsSection.cards"
                 :key="card.id"
                 :card="card"

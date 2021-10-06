@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="container">
-      <LargeCardDisplay
+      <fireLargeCardDisplay
         v-for="cardInfo in largeCardSections.slice(0,1)"
         :key="'A' + cardInfo.id"
         :cardsSection="cardInfo"
       />
       <hr>
-      <SmallCardDisplay 
+      <fireSmallCardDisplay 
         v-for="cardInfo in smallCardSections"
         :key="'B' + cardInfo.id"
         :cardsSection="cardInfo"
@@ -19,6 +19,7 @@
 <script>
   import { largeCardSections, smallCardSections } from "@/assets/data.js"
   export default {
+    layout: "fire/default",
     data(){
       return {
         largeCardSections: largeCardSections,

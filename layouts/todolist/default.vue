@@ -2,7 +2,6 @@
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
       <NuxtLink class="navbar-brand" to="/">Home</NuxtLink>
-      <NuxtLink class="navbar-brand" to="/fire/">Fire</NuxtLink>
       <NuxtLink class="navbar-brand" to="/todolist/">Todo List</NuxtLink>
     </nav>
 
@@ -19,8 +18,5 @@
   }
   .nav-left {
     margin-left: auto;
-  }
-  #default-body {
-    margin-top: 20px;
   }
 </style>

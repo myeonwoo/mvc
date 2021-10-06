@@ -1,6 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
-    <NuxtLink class="navbar-brand" to="/">Firengii</NuxtLink>
+    <NuxtLink class="navbar-brand" to="/">Home</NuxtLink>
+    <NuxtLink class="navbar-brand" to="/fire/">Firengii</NuxtLink>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,10 +9,10 @@
     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <NuxtLink to="/products" class="nav-link">Products <span class="sr-only">(current)</span></NuxtLink>
+                <NuxtLink to="/fire/products" class="nav-link">Products <span class="sr-only">(current)</span></NuxtLink>
             </li>
             <li class="nav-item active">
-                <NuxtLink to="/my-items" class="nav-link">My Items<span class="sr-only">(current)</span></NuxtLink>
+                <NuxtLink to="/fire/my-items" class="nav-link">My Items<span class="sr-only">(current)</span></NuxtLink>
             </li>
         </ul>
     </div>

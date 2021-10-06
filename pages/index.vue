@@ -1,19 +1,11 @@
 <template>
   <div>
     <div class="container">
-      <Hero />
-      <LargeCardDisplay 
-        v-for="cardInfo in largeCardSections"
-        :key="'A' + cardInfo.id"
-        :cardsSection="cardInfo"
-      />
-      <hr>
-      <h3>Small cards here</h3>
-      <SmallCardDisplay
-        v-for="cardInfo in smallCardSections"
-        :key="'B' + cardInfo.id"
-        :cardsSection="cardInfo"
-      />
+      <ul>
+        <li><NuxtLink to="/fire">App #1 : Firngii</NuxtLink></li>
+        <li><NuxtLink to="/todolist">App #2 : Todo List</NuxtLink></li>
+        <li>App #3</li>
+      </ul>
     </div>
   </div>
 </template>

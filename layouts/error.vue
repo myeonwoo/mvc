@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <PageNotFound />
+        찾을수 없는 페이지입니다.
     </div>
 </template>
 

@@ -1,16 +1,16 @@
 <template>
     <div class="container">
-    <MyItem
+        <fireMyItem
         v-for="rental in myRentals"
         :key="rental.id"
         :item="rental"
-    />
-</div>
+        />
+    </div>
 </template>
 <script>
     import { mapState } from 'vuex';
     export default {
-        layout: "no-nav",
+        layout: "fire/no-nav",
         computed: {
             ...mapState([
                 'myRentals'
