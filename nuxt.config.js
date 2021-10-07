@@ -39,13 +39,41 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    // baseURL: 'http://127.0.0.1:8000/api'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // server: {
+  //   port: 3000
+  // },
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'token',
+          global: true,
+          // required: true,
+          // type: 'Bearer'
+        },
+        user: {
+          property: 'user',
+          // autoFetch: true
+        },
+        endpoints: {
+          login: { url: 'http://127.0.0.1:8000/api/auth/login', method: 'post' },
+          logout: { url: 'http://127.0.0.1:8000/api/auth/logout', method: 'post' },
+          user: { url: 'http://127.0.0.1:8000/api/auth/user', method: 'get' }
+        }
+      }
+    }
   }
 }

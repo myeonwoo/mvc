@@ -59,3 +59,12 @@
   1. 소스 수정
   2. git push
   3. build & deploy
+
+
+
+-- nuxt auth 설치
+npm install --save-exact @nuxtjs/auth-next
+수정 nuxt.config.js
+
+-- vee-validate 설치
+npm install vee-validate
